@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/cleverpet/hackerpet
+notes: >-
+  CleverPet's only first-party client library is hackerpet, an open-source
+  Particle/Arduino C++ library for programming the CleverPet Hub (an embedded
+  IoT device on the Particle platform). It is distributed through the Particle
+  library manager rather than a general-purpose package registry (npm/PyPI/etc.),
+  and exposes the HubInterface class API documented at
+  https://cleverpet.github.io/hackerpet-api-docs/. No web/REST client SDKs exist
+  because the Hub has no public web API.
+packages:
+- language: cpp
+  registry: particle
+  name: hackerpet
+  version: 0.2.6
+  license: AGPL-3.0
+  url: https://build.particle.io/libs/hackerpet/
+  repository: https://github.com/cleverpet/hackerpet
+  install: particle library add hackerpet
+  architectures: particle-photon
+  official: true
+  description: >-
+    Modify and write your own CleverPet games. Controls the Hub's lights, food
+    pod, and tray motor via the HubInterface class.

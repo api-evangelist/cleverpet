@@ -1,8 +1,28 @@
 aid: cleverpet
 name: CleverPet
-description: CleverPet is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  CleverPet is a pet-technology company behind the CleverPet Hub, a programmable
+  "game console for pets" that gives dogs and cats mental stimulation through
+  puzzle games and dispenses food treats as rewards. The Hub is built on the
+  Particle IoT platform, and CleverPet publishes hackerpet, an open-source
+  Particle/Arduino C++ library that lets developers write, customize, and share
+  their own games by controlling the Hub's lights, food pod, and tray motor
+  through the HubInterface class. The company was part of the Techstars
+  accelerator, and its team and open-source hardware/software work continued
+  under the FluentPet brand.
 url: https://raw.githubusercontent.com/api-evangelist/cleverpet/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://clever.pet/cdn/shop/t/11/assets/opengraph.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Pet Technology
+- Consumer Hardware
+- IoT
+- Embedded
+- SDK
+- Animal Enrichment
+- Games
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,38 @@ maintainers:
 common:
 - type: Website
   url: https://clever.pet/
+- type: DeveloperPortal
+  url: https://hackerpet.com/
+- type: Documentation
+  url: https://cleverpet.github.io/hackerpet-api-docs/
+- type: APIReference
+  url: https://cleverpet.github.io/hackerpet-api-docs/
+- type: GettingStarted
+  url: https://hackerpet.com/
+- type: GitHubOrganization
+  url: https://github.com/cleverpet
+- type: SourceCode
+  url: https://github.com/cleverpet/hackerpet
+- type: Blog
+  url: https://clever.pet/blogs/posts
+- type: Support
+  url: https://clever.pet/pages/support
+- type: PrivacyPolicy
+  url: https://clever.pet/pages/privacy-policy
+- type: TermsOfService
+  url: https://clever.pet/pages/terms-of-use
+- type: Login
+  url: https://clever.pet/account/login
+- type: Packages
+  url: packages/cleverpet-packages.yml
+- type: SDKs
+  url: packages/cleverpet-packages.yml
+- type: WellKnown
+  url: well-known/cleverpet-well-known.yml
+- type: DomainSecurity
+  url: security/cleverpet-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: searched
+host: https://clever.pet
+notes: >-
+  clever.pet is a Shopify-hosted storefront. The openid-configuration and
+  oauth-authorization-server documents that return 200 are Shopify's
+  platform-level customer-account OIDC (issuer https://shopify.com/authentication/13759349),
+  not a first-party CleverPet API authorization server. Recorded verbatim as
+  fetched. CleverPet's developer surface (the hackerpet Particle library) exposes
+  no /.well-known/ discovery documents of its own.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: cleverpet-openid-configuration.json
+  source: shopify-platform
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: cleverpet-oauth-authorization-server.json
+  source: shopify-platform
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
